@@ -1,1 +1,0 @@
-# 6-ZFA_LOCAL_CLASS
