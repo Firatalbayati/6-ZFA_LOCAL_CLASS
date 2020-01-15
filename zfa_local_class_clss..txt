@@ -1,0 +1,40 @@
+*&---------------------------------------------------------------------*
+*&  Include           ZFA_LOCAL_CLASS_CLSS
+*&---------------------------------------------------------------------*
+CLASS gcl_class DEFINITION FINAL.
+
+  PUBLIC SECTION.
+
+    METHODS: constructor
+      IMPORTING
+         iv_ccode TYPE bukrs
+         iv_year  TYPE gjahr
+         iv_month TYPE month,
+         display.
+
+
+    CLASS-DATA:
+         gv_ccode TYPE bukrs,
+         gv_year  TYPE gjahr,
+         gv_month TYPE month.
+
+
+
+ENDCLASS.
+
+CLASS gcl_class IMPLEMENTATION.
+
+  METHOD constructor.
+    gv_ccode = iv_ccode.
+    gv_year  = iv_year.
+    gv_month = iv_month.
+  ENDMETHOD.                    "constructor
+
+
+  METHOD display.
+    WRITE: 'Company:',gv_ccode.
+    WRITE: 'Year:'   ,gv_year.
+    WRITE: 'Month:'  ,gv_month.
+  ENDMETHOD.                    "display_color
+
+ENDCLASS.                    "lcl_class_test IMPLEMENTATION

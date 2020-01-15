@@ -1,0 +1,25 @@
+*&---------------------------------------------------------------------*
+*& Report  ZFA_LOCAL_CLASS
+*&
+*&---------------------------------------------------------------------*
+*&
+*&
+*&---------------------------------------------------------------------*
+
+REPORT zfa_local_class.
+
+INCLUDE zfa_local_class_top.
+INCLUDE zfa_local_class_scrn.
+INCLUDE zfa_local_class_clss.
+INCLUDE zfa_local_class_f01.
+
+INITIALIZATION.
+  CREATE OBJECT go_object
+     exporting
+   iv_ccode =  p_ccode
+   iv_year  =  p_year
+   iv_month =  p_month.
+
+START-OF-SELECTION.
+
+  go_object->display( ).

@@ -1,0 +1,7 @@
+*&---------------------------------------------------------------------*
+*&  Include           ZFA_LOCAL_CLASS_SCRN
+*&---------------------------------------------------------------------*
+
+PARAMETERS: p_ccode TYPE bukrs,
+            p_year  TYPE gjahr,
+            p_month TYPE month.

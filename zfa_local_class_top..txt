@@ -1,0 +1,6 @@
+*&---------------------------------------------------------------------*
+*&  Include           ZFA_LOCAL_CLASS_TOP
+*&---------------------------------------------------------------------*
+
+CLASS : gcl_class DEFINITION DEFERRED.
+DATA : go_object TYPE REF TO gcl_class.
